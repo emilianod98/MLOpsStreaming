@@ -173,7 +173,7 @@ def get_actor(platform: str, release_year: int):
 '''
 
 #     MACHINE LEARNING MODEL: GET_RECOMMENDED. 
-@app.post("/get_recommended/{userId}/{id}")
+@app.get("/get_recommended/{userId}/{id}")
 def recommended(userId: int, id: str):
     prediction = model.predict(userId, id)
     if prediction.est >= 4:
