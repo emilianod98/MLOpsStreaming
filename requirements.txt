@@ -1,5 +1,6 @@
 fastapi
 ipynb
+joblib
 matplotlib
 matplotlib-inline
 numpy
