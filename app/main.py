@@ -104,8 +104,7 @@ def get_score_count(year: int, platform: str, score: float):
 @app.get('/get_count_platform/{platform}')
 # define a function called "get_count_platform" which takes a string of text "platform" as an argument.
 def get_count_platform(platform: str):
-    # Filter the column "duration_type" so that all values ​​are equal to the string 'min'.
-    filterDb = dfPlatform[dfPlatform['duration_type'] == 'min']
+    filterDb = dfPlatform
     # With the returned platform value, if it's not null, I tell it to do these steps:
     if platform is not None:
         # Create a regular expression object (filterPlatform) using the compile() function of the Python "re" module,

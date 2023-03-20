@@ -1,0 +1,14 @@
+fastapi
+ipynb
+matplotlib
+matplotlib-inline
+numpy
+pandas
+pandas-profiling
+pickleshare
+plotly
+pyarrow
+scikit-learn
+scikit-surprise
+surprise
+uvicorn
