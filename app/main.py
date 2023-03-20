@@ -8,10 +8,9 @@
 # Import the libraries.
 import numpy as np
 import pandas as pd
+import pickle
 import re
 from fastapi import FastAPI
-
-
 
 
 # I instantiate the module to call FastApi in a variable.
@@ -19,6 +18,8 @@ app = FastAPI()
 # I create another variable to read the dataset I'm going to work with.
 dfPlatform = pd.read_parquet('./StreamingFA.parquet')
 
+#with open('trainingmodel.pkl', 'wb') as file:
+#    model = pickle.load(file)
 
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -161,6 +162,29 @@ def get_actor(platform: str, release_year: int):
     # platform and the given year.
     return resultCast
 
+
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#      ┌──┐┬ ┬┌─┐┬─┐┬  ┌┬┐┌─┐  ┌┬┐┬
+#      │  ││ │├┤ ├┬┘│   │ │ │  ││││
+#      └─\┘└─┘└─┘┴└─┴   ┴ └─┘  ┴ ┴└─┘
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+'''
+
+#     MACHINE LEARNING MODEL: GET_RECOMMENDED. 
+@app.post("/get_recommended/{userId}/{id}")
+def recommended(userId: int, id: str):
+    prediction = model.predict(userId, id)
+    if prediction.est >= 4:
+        results = 'Is Totally Recommended!', prediction.est
+    elif prediction.est >= 3 and prediction.est < 4:
+        results = "Is Recommended!", prediction.est
+    else:
+        results = "It might not be to your liking!", prediction.est
+    return results
+
+'''
 # Thanks for your time!
 
 
