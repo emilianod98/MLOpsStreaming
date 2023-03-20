@@ -11,6 +11,7 @@ import pandas as pd
 import re
 import uvicorn
 import pickle
+import gdown
 from fastapi import FastAPI, Request
 from fastapi.responses import RedirectResponse
 
@@ -177,6 +178,9 @@ def get_actor(platform: str, release_year: int):
 
 @app.get("/get_recommended/{userId}/{id}")
 def recommended(userId, id):
+    url = "https://drive.google.com/uc?id=1z8iBBMVkTMdW0zIAnVRuOYewlmF9ROYh"
+    output = "trainingmodel.pickle"
+    gdown.download(url, output, quiet=False)
     with open('trainingmodel.pickle', 'rb') as file:
         model = pickle.load(file)
     prediction = model.predict(userId,id)
