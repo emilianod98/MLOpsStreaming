@@ -34,7 +34,7 @@ La propuesta es trabajar con cuatros dataset de distintas plataformas de streami
 
 ## VIDEO EXPLICATIVO:
 
-- [`LINK DEL VIDEO`]([https://github.com/emilianod98/MLOpsStreaming/blob/main/data_transformation.ipynb](https://www.youtube.com/watch?v=cBLjF2p6v-I&ab_channel=EmilianoDaniele)
+- [`LINK DEL VIDEO`](https://www.youtube.com/watch?v=cBLjF2p6v-I&ab_channel=EmilianoDaniele)
 
 
 ## REALIZADO POR:
