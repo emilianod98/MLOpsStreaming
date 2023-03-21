@@ -178,9 +178,6 @@ def get_actor(platform: str, release_year: int):
 
 @app.get("/get_recommended/{userId}/{id}")
 def recommended(userId, id):
-    url = 'https://drive.google.com/file/d/1z8iBBMVkTMdW0zIAnVRuOYewlmF9ROYh/view?usp=share_link'
-    output = 'trainingmodel.pickle'
-    gdown.download(url, output, quiet=False)
     with open('trainingmodel.pickle', 'rb') as file:
         model = pickle.load(file)
     prediction = model.predict(userId,id)

@@ -1,5 +1,4 @@
 fastapi
-gdown
 ipynb
 joblib
 matplotlib
