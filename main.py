@@ -11,7 +11,6 @@ import pandas as pd
 import re
 import uvicorn
 import pickle
-import gdown
 from fastapi import FastAPI, Request
 from fastapi.responses import RedirectResponse
 
