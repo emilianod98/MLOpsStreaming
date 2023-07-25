@@ -4,7 +4,7 @@
 
 ## INTRODUCCIÓN
 
-PROYECTO DE LA ACADEMIA SOY HENRY: Etapa Labs PI01.
+PROYECTO DELA BOOTCAMP SOYHENRY (DATA SCIENCE): Etapa Labs PI01.
 La propuesta es trabajar con cuatros dataset de distintas plataformas de streaming, como:
 
 - Amazon Prime Video.
